@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Sistema</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="box">
+        <h2>Criar Conta</h2>
+        <form action="/cadastrar" method="POST">
+            <div class="item">
+                <label>Nome Completo</label>
+                <input type="text" name="nome" required>
+            </div>
+            <div class="item">
+                <label>Idade</label>
+                <input type="number" name="idade" required>
+            </div>
+            <div class="item">
+                <label>E-mail Corporativo</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <label>Senha</label>
+                    <input type="password" name="pass" required>
+                </div>
+                <div class="item">
+                    <label>Confirmar Senha</label>
+                    <input type="password" name="pass2" required>
+                </div>
+            </div>
+            <button type="submit" class="btn">CADASTRAR</button>
+        </form>
+    </div>
+</body>
+</html>
