@@ -57,7 +57,8 @@ def cadastrar():
     with open("cadastros.txt", "a") as arquivo:
         arquivo.write(f"Nome: {nome} | Email: {email}\n")
     
-    return f"<h1>Sucesso!</h1><p>O usuário <b>{nome}</b> foi registrado no sistema.</p><a href='/'>Voltar</a>"
+    return f"<h1>Completo,</h1><p>O usuário <b>{nome}</b> foi registrado no sistema.</p><a href='/'>Voltar</a>"
 
 if __name__ == '__main__':
+
     app.run(debug=True)
